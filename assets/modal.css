@@ -1,0 +1,271 @@
+
+.swiper-pagination-progressbar-fill {
+	background: rgb(241, 255, 50)!important;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+}
+form {
+	max-width: 960px;
+
+}
+.swiper-slide .form__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 5px;
+	min-height: auto;
+}
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 5px;
+	min-height: auto;
+}
+.slide__title, .slide__text {
+	text-align: left;
+}
+.slide__title {
+	font-size: 26px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.form__slide-img {
+	width: 100%;
+	height: 100%;
+	padding: 25px 45px 120px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap:  35px 20px;
+}
+.form__label-img span {
+	margin: 5px 0;
+	font-size: 15px;
+	line-height: 1.2;
+}
+.form__slide-text {
+	width: 100%;
+	height: 100%;
+	padding: 25px 45px 100px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	margin-right: auto;
+    justify-items: start;
+}
+.form__slide-img .slide__title {
+	grid-column: 1/5;
+ }
+
+.form__label-img {
+	max-width: 210px;
+    max-height: 210px;
+	position: relative;
+}
+
+.form__label-img span {
+	display: block;
+	text-align: left;
+}
+
+.input-img {
+	position: absolute;
+	left: -900%;
+	opacity: 0;
+}
+
+.form__label-img::before {
+	content: "\2713";
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #189d0e;
+	border: none;
+	box-shadow: 0px 1px 8px 0px rgb(0 0 0 / 40%);
+	border-radius: 50%;
+	left: 0;
+	right: 0;
+	transform: translate(-30%, -30%);
+	display: none;
+}
+input:checked + .form__label-img::before  {
+	display: block;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+	content: "";
+}
+
+.back {
+	background-color: #8a8a8a;
+}
+.next {
+	background-color: #f7d87c;
+}
+.back, .next {
+	color: #303030;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 14px;
+	width: auto;
+	top: auto;
+	bottom: 5%;
+}
+
+.swiper-button-disabled {
+	opacity: 0!important;
+}
+
+.form__question__name,
+.form__question__tel,
+.question__btn {
+	display: block;
+	outline: none;
+}
+
+.form__question__name {
+	width: 100%;
+	padding: 26px 20px 10px 20px;
+	border: none;
+	border-bottom: 1px solid #b3b3b3;
+	font-family: 'Gilroy',Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.form__question__tel {
+	width: 100%;
+	padding: 26px 20px 10px 20px;
+	border: none;
+	border-bottom: 1px solid #b3b3b3;
+	font-family: 'Gilroy',Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.question__btn {
+	background-color: #f7d87c;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 10px;
+	margin-left: auto;
+	font-family: 'Gilroy',Arial,sans-serif;
+}
+
+.form__question__box h3 {
+	padding: 15px 45px;
+	background-color: #f0f0f0;
+}
+
+.form__question .swiper-slide {
+	max-height: fit-content;
+}
+.form__question .swiper-button-prev::before, .form__question .swiper-button-next::before {
+	content: "";
+}
+.swiper {
+	width: 100%;
+	height: auto;
+  }
+
+.form__label {
+	font-size: 15px;
+}
+
+.modal__opros {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+.close__btn {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	z-index: 2;
+	display: none;
+
+}
+.close__btn::after {
+	content: "\2716";
+	font-size: 30px;
+	color: #f0f0f0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.modal__callback {
+	max-width: 560px;
+	padding: 30px;
+	background: #ffffff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	display: none;
+}
+.modal__callback__title{
+	color: #3e3e3e;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: 'Gilroy';
+	margin-bottom: 11px;
+	line-height: 1.23;
+
+}
+.modal__callback__text {
+	color: #3e3e3e;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Gilroy';
+	font-size: 14px;
+	line-height: 1.55;
+	margin-bottom: 20px;
+}
+.modal__callback__input, 
+.modal__callback__btn {
+	display: block;
+	padding: 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 100%;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid #c9c9c9;
+}
+.modal__callback__btn {
+	margin-bottom: 0;
+	border: none;
+	background-color: #fcef87;
+}
+
+
+
+
+
+
+.modal-open {
+	display: block;
+}
